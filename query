@@ -1,0 +1,23 @@
+es 1
+SELECT * FROM `students` WHERE YEAR(`date_of_birth`) = 1990
+
+es 2
+SELECT * FROM `courses` WHERE `cfu` > 10
+
+es 3
+SELECT * FROM `students` WHERE YEAR(CURDATE()) - YEAR(`date_of_birth`) > 30
+
+es 4
+SELECT * FROM `courses` WHERE `period` = 'I semestre' AND `year` = 1
+
+es 5
+SELECT * FROM `exams` WHERE `date` = '2020-06-20' AND `hour` > '14:00:00'
+
+es 6
+SELECT * FROM `degrees` WHERE `level` = 'magistrale'
+
+es 7
+SELECT COUNT(*) FROM `departments`
+
+es 8
+SELECT * FROM `teachers` WHERE `phone` IS NULL
