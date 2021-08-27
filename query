@@ -20,4 +20,4 @@ es 7
 SELECT COUNT(*) FROM `departments`
 
 es 8
-SELECT * FROM `teachers` WHERE `phone` IS NULL
+SELECT COUNT(*) FROM `teachers` WHERE `phone` IS NULL
