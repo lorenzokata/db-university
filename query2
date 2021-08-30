@@ -20,6 +20,7 @@ GROUP BY
     FROM `courses` 
     GROUP BY degree_id
 
+
 JOIN
 
     es1
@@ -40,8 +41,10 @@ JOIN
     JOIN `course_teacher` ON `teachers`.`id` = `course_teacher`.`teacher_id` 
     JOIN `courses` ON `course_teacher`.`course_id` = `courses`.`id` 
     WHERE `teachers`.`id` = 44
+    
+    
+BONUS
 
-    BONUS
     SELECT `students`.`fiscal_code`, `courses`.`name`, COUNT(`students`.`fiscal_code`) AS tentativi 
     FROM `students` 
     JOIN `exam_student` ON `exam_student`.`student_id` = `students`.`id` 
